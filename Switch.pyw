@@ -80,7 +80,7 @@ def handle_cycle(_):
 # GUI Setup
 root = tk.Tk()
 root.title("Wakfu Multi")
-root.geometry("400x300")
+root.geometry("300x300")
 root.configure(bg="#2b2b2b")  # Dark background
 
 # Status label
@@ -127,4 +127,5 @@ style_button(cycle_btn)
 if __name__ == "__main__":
     get_window_list()
     kb.on_press_key(cycle_key, handle_cycle, suppress=True)
+
     root.mainloop()
