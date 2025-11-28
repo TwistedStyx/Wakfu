@@ -1,7 +1,5 @@
-#Set hotkeys in char_legend
-char_legend = {
-    "^": "Character1", 
-    "&": "Character2"
-}
+#Set hotkeys
+cycle_key = 'f4'
 
+#Set game name
 game_name = "WAKFU"
