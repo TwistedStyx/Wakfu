@@ -70,7 +70,8 @@ def cycle_windows():
 
     hwnd, title = window_list[current_index]
     focus_window(hwnd)
-    status_var.set(f"Focusing: {title}")
+    status_var.set(f"Focusing: {title.rstrip(" - WAKFU")}")
+    #update_window_listbox() Want to test before I uncomment
     highlight_current_window()
 
 def handle_cycle(_):
@@ -129,3 +130,4 @@ if __name__ == "__main__":
     kb.on_press_key(cycle_key, handle_cycle, suppress=True)
 
     root.mainloop()
+
